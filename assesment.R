@@ -1,6 +1,4 @@
 # Please find the instrutions of my code in README.md  
-
-
 # makeCacheMatrix returns a list of functions
 # Its puspose is to store a martix and a cached value of the inverse of the 
 # matrix. Contains the following functions:
@@ -8,7 +6,6 @@
 # * getMatrix      get the value of a matrix
 # * cacheInverse   get the cahced value (inverse of the matrix)
 # * getInverse     get the cahced value (inverse of the matrix)
-#
 
 # makeCacheMatrix function
 makeCacheMatrix <- function(x = numeric()) {
@@ -30,8 +27,8 @@ makeCacheMatrix <- function(x = numeric()) {
         }
 
         # cache the given argument 
-        cacheInverse <- function(examine) {
-                cache <<- examine
+        cacheInverse <- function(solve) {
+                cache <<- solve
         }
 
         # get the cached value
